@@ -1,26 +1,65 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'start' ]
-2 info using npm@1.4.21
-3 info using node@v0.10.25
-4 verbose run-script [ 'prestart', 'start', 'poststart' ]
-5 info prestart angular2-website@1.0.0
-6 info start angular2-website@1.0.0
-7 verbose unsafe-perm in lifecycle true
-8 info angular2-website@1.0.0 Failed to exec start script
-9 error angular2-website@1.0.0 start: `tsc && concurrently "tsc -w" "lite-server" `
-9 error Exit status 2
-10 error Failed at the angular2-website@1.0.0 start script.
-10 error This is most likely a problem with the angular2-website package,
-10 error not with npm itself.
-10 error Tell the author that this fails on your system:
-10 error     tsc && concurrently "tsc -w" "lite-server"
-10 error You can get their info via:
-10 error     npm owner ls angular2-website
-10 error There is likely additional logging output above.
-11 error System Linux 3.16.0-44-generic
-12 error command "/usr/bin/nodejs" "/usr/bin/npm" "start"
-13 error cwd /home/arpit165/Downloads/Angular_2/Project/Sample_web_angular_2
-14 error node -v v0.10.25
-15 error npm -v 1.4.21
-16 error code ELIFECYCLE
-17 verbose exit [ 1, true ]
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'fsevents@1.0.0' ]
+2 info using npm@4.0.3
+3 info using node@v7.2.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData fsevents@1.0.0
+8 silly fetchNamedPackageData fsevents
+9 silly mapToRegistry name fsevents
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'fsevents',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'fsevents',
+12 silly mapToRegistry   name: 'fsevents',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/fsevents
+14 verbose get https://registry.npmjs.org/fsevents not expired, no request
+15 silly install normalizeTree
+16 silly loadCurrentTree Finishing
+17 silly loadIdealTree Starting
+18 silly install loadIdealTree
+19 silly cloneCurrentTree Starting
+20 silly install cloneCurrentTreeToIdealTree
+21 silly cloneCurrentTree Finishing
+22 silly loadShrinkwrap Starting
+23 silly install loadShrinkwrap
+24 silly loadShrinkwrap Finishing
+25 silly loadAllDepsIntoIdealTree Starting
+26 silly install loadAllDepsIntoIdealTree
+27 silly rollbackFailedOptional Starting
+28 silly rollbackFailedOptional Finishing
+29 silly runTopLevelLifecycles Finishing
+30 silly install printInstalled
+31 verbose stack Error: Unsupported platform for fsevents@1.0.0: wanted {"name":"fsevents","version":"1.0.0","description":"Native Access to Mac OS-X FSEvents","main":"fsevents.js","dependencies":{"nan":"^2.0.2","node-pre-gyp":"^0.6.8"},"os":["darwin"],"engines":{"node":">=0.8.0"},"scripts":{"install":"node-pre-gyp install --fallback-to-build","test":"tap ./test"},"binary":{"module_name":"fse","module_path":"./lib/binding/{configuration}/{node_abi}-{platform}-{arch}/","remote_path":"./v{version}/","package_name":"{module_name}-v{version}-{node_abi}-{platform}-{arch}.tar.gz","host":"https://fsevents-binaries.s3-us-west-2.amazonaws.com"},"repository":{"type":"git","url":"git+https://github.com/strongloop/fsevents.git"},"keywords":["fsevents","mac"],"author":{"name":"Philipp Dunkel","email":"pip@pipobscure.com"},"license":"MIT","bugs":{"url":"https://github.com/strongloop/fsevents/issues"},"homepage":"https://github.com/strongloop/fsevents","devDependencies":{"tap":"~0.4.8"},"gitHead":"ca7dc3eb29b151815d243328675d1e26f059fbc9","bundleDependencies":["node-pre-gyp"],"_id":"fsevents@1.0.0","_shasum":"9353c291338e0d064939b479f71e027e8a6be834","_from":"fsevents@1.0.0","_npmVersion":"2.14.2","_nodeVersion":"4.0.0","_npmUser":{"name":"es128","email":"elan.shanker+npm@gmail.com"},"dist":{"shasum":"9353c291338e0d064939b479f71e027e8a6be834","tarball":"https://registry.npmjs.org/fsevents/-/fsevents-1.0.0.tgz"},"maintainers":[{"name":"bajtos","email":"miro.bajtos@gmail.com"},{"name":"bnoordhuis","email":"info@bnoordhuis.nl"},{"name":"es128","email":"elan.shanker+npm@gmail.com"},{"name":"pipobscure","email":"pip@pipobscure.com"},{"name":"strongloop","email":"callback@strongloop.com"}],"directories":{},"_resolved":"https://registry.npmjs.org/fsevents/-/fsevents-1.0.0.tgz","_requested":{"raw":"fsevents@1.0.0","scope":null,"escapedName":"fsevents","name":"fsevents","rawSpec":"1.0.0","spec":"1.0.0","type":"version"},"_spec":"fsevents@1.0.0","_where":"/home/arpit165/Downloads/Angular_2/Project/Sample_web_angular_2","_args":[[{"raw":"fsevents@1.0.0","scope":null,"escapedName":"fsevents","name":"fsevents","rawSpec":"1.0.0","spec":"1.0.0","type":"version"},"/home/arpit165/Downloads/Angular_2/Project/Sample_web_angular_2"]],"readme":"ERROR: No README data found!"} (current: {"os":"linux","cpu":"x64"})
+31 verbose stack     at checkPlatform (/usr/local/lib/node_modules/npm/node_modules/npm-install-checks/index.js:45:14)
+31 verbose stack     at thenWarnEngineIssues (/usr/local/lib/node_modules/npm/lib/install/validate-args.js:41:5)
+31 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+31 verbose stack     at checkEngine (/usr/local/lib/node_modules/npm/node_modules/npm-install-checks/index.js:24:10)
+31 verbose stack     at module.exports.isInstallable (/usr/local/lib/node_modules/npm/lib/install/validate-args.js:38:3)
+31 verbose stack     at Array.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+31 verbose stack     at LOOP (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+31 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:18:7
+31 verbose stack     at checkSelf (/usr/local/lib/node_modules/npm/lib/install/validate-args.js:46:72)
+31 verbose stack     at Array.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+32 verbose pkgid fsevents@1.0.0
+33 verbose cwd /home/arpit165/Downloads/Angular_2/Project/Sample_web_angular_2
+34 error Linux 3.16.0-44-generic
+35 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "fsevents@1.0.0"
+36 error node v7.2.0
+37 error npm  v4.0.3
+38 error code EBADPLATFORM
+39 error notsup Unsupported platform for fsevents@1.0.0: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+40 error notsup Valid OS:    darwin
+40 error notsup Valid Arch:  any
+40 error notsup Actual OS:   linux
+40 error notsup Actual Arch: x64
+41 verbose exit [ 1, true ]
